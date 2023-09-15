@@ -14,43 +14,43 @@ class FruitsCounter extends Component {
   }
 
   render() {
-    const {mangoesCount, bananasCount} = state
+    const {mangoesCount, bananasCount} = this.state
 
     return (
-      <div class="app-container">
-        <div class="fruits-counter">
-          <h1 class="count-text">
-            Bob ate <span class="count">{mangoesCount}</span> mangoes
-            <span class="count"> {bananasCount}</span> bananas
+      <div className="app-container">
+        <div className="fruits-counter">
+          <h1 className="count-text">
+            Bob ate <span className="count">{mangoesCount}</span> mangoes
+            <span className="count"> {bananasCount}</span> bananas
           </h1>
-          <div class="counters-control-container">
-            <div class="counter-control">
+          <div className="counters-control-container">
+            <div className="counter-control">
               <img
                 src="https://assets.ccbp.in/frontend/react-js/mango-img.png"
                 alt="banana"
-                class="fruit-image"
+                className="fruit-image"
               />
-              <div class="button-container">
+              <div className="button-container">
                 <button
                   type="button"
-                  class="button"
-                  onclick={this.onClickEatMango()}
+                  className="button"
+                  onClick={this.onClickEatMango()}
                 >
                   Eat Mango
                 </button>
               </div>
             </div>
-            <div class="counter-control">
+            <div className="counter-control">
               <img
                 src="https://assets.ccbp.in/frontend/react-js/banana-img.png"
                 alt="banana"
-                class="fruit-image"
+                className="fruit-image"
               />
-              <div class="button-container">
+              <div className="button-container">
                 <button
                   type="button"
-                  class="button"
-                  onclick={this.onClickEatBanana()}
+                  className="button"
+                  onClick={this.onClickEatBanana()}
                 >
                   Eat Banana
                 </button>
